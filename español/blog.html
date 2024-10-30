@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.A.D - Servicios</title>
+    <title>Blog - MAD</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        .more-content {
+            display: none;
+        }
+    </style>
     <style>
         html, body {
             height: 100%;
-            margin: 0;
-            background-image: url('https://images.app.goo.gl/iLAdAFj73HLd5V6Z7'); /* Reemplaza con la ruta de tu imagen */
-            background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-            background-position: center; /* Centra la imagen */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            color: white; /* Cambia el color del texto si es necesario */
         }
         body {
             display: flex;
@@ -21,15 +21,14 @@
         }
         main {
             flex: 1;
-            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para mejorar la legibilidad */
         }
         footer {
-            background-color: rgba(255, 255, 255, 0.8); /* Color de fondo del pie de página */
+            background-color: #000408; /* Color de fondo del pie de página */
         }
     </style>
 </head>
 <body>
-    <header>
+        <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
               <div class="container-fluid">
@@ -39,88 +38,97 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Politica de Privacidad</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Terminos de Servicios</a>
-                    </li>
-                    
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="politica.html">Política de Privacidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="terminos.html">Términos y Condiciones</a></li>
                   </ul>
               </div>
             </nav>
           </div>
     </header>
-    <section id="servicios" class="container mt-5">
-        <h2 class="text-center text-primary mb-4">Nuestros Servicios</h2>
-        <p class="">En MAD, contamos con un equipo entusiasta de tres profesionales dedicados a ofrecer productos electrónicos de alta gama y soluciones innovadoras para tus desafíos tecnológicos. Buscamos proporcionarte una experiencia excepcional y hacer que la tecnología se adapte a tus necesidades.</p>
     
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card shadow-lg border-0 rounded">
-                    <img src="img/consultoria-tecnologica.png" class="card-img-top" alt="Consultoría Tecnológica">
+    <main class="container mt-5 blog">
+        <h2 class="text-center text-primary mb-4">Blog de MAD</h2>
+        <p class="text-center mb-4">Bienvenido a nuestro blog, donde compartimos consejos, noticias y guías sobre tecnología y productos electrónicos.</p>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
                     <div class="card-body">
-                        <h3 class="card-title">Consultoría Tecnológica</h3>
-                        <p class="card-text">Te asesoramos para encontrar la mejor solución tecnológica que se ajuste a tus requerimientos, tanto en el hogar como en tu empresa.</p>
-                        <a href="#" class="btn btn-primary">Más Información</a>
+                        <h3 class="card-title">5 Consejos para Elegir el Smartphone Perfecto</h3>
+                        <p class="card-text">Elegir un smartphone puede ser abrumador. Aquí te damos 5 consejos para que tomes la mejor decisión...</p>
+                        <span class="more-content" style="display: none;">
+                            <p>- Define tu presupuesto: Establece cuánto estás dispuesto a gastar antes de comenzar a buscar.</p>
+                            <p>- Evalúa las especificaciones: Considera el procesador, la memoria RAM y la capacidad de almacenamiento.</p>
+                            <p>- Revisa la cámara: Si la fotografía es importante para ti, asegúrate de que el smartphone tenga una buena cámara.</p>
+                            <p>- Considera la duración de la batería: Asegúrate de que la batería sea lo suficientemente duradera para tus necesidades diarias.</p>
+                            <p>- Lee opiniones y reseñas: Investiga lo que otros usuarios dicen sobre el modelo que te interesa.</p>
+                        </span>
+                        <a href="javascript:void(0)" class="btn btn-primary" onclick="toggleContent(this)">Leer más</a>
                     </div>
                 </div>
             </div>
             
-            <div class="col-md-4">
-                <div class="card shadow-lg border-0 rounded">
-                    <img src="img/coleccion-aparatos-electronicos_1294-17.avif" class="card-img-top" alt="Comercio de Productos Electrónicos">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
                     <div class="card-body">
-                        <h3 class="card-title">Comercio de Productos Electrónicos</h3>
-                        <p class="card-text">Disponemos de una amplia selección de dispositivos electrónicos de calidad superior para que elijas lo que más te conviene.</p>
-                        <a href="#" class="btn btn-primary">Más Información</a>
+                        <h3 class="card-title">Cómo Mantener Tu Laptop en Óptimas Condiciones</h3>
+                        <p class="card-text">Aprende a cuidar tu laptop para que dure más tiempo y funcione de manera eficiente...</p>
+                        <span class="more-content" style="display: none;">
+                            <p>Para mantener su computadora portátil en óptimas condiciones, limpie regularmente el teclado y la pantalla con un paño suave y aire comprimido para eliminar el polvo. Mantén el sistema operativo y los programas actualizados, y usa un software antivirus para protegerte de malware. Desfragmenta el disco duro si no es un SSD y evita el sobrecalentamiento usando la laptop en superficies duras y manteniendo los ventiladores limpios. Cuida la batería desconectándola una vez cargada y utiliza la laptop con batería de vez en cuando. Finalmente, deshazte de archivos innecesarios y organiza tus documentos.</p>
+                        </span>
+                        <a href="javascript:void(0)" class="btn btn-primary" onclick="toggleContent(this)">Leer más</a>
                     </div>
                 </div>
             </div>
     
-            <div class="col-md-4">
-                <div class="card shadow-lg border-0 rounded">
-                    <img src="img/asistenciatecnica.avif" class="card-img-top" alt="Asistencia Técnica">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
                     <div class="card-body">
-                        <h3 class="card-title">Asistencia Técnica</h3>
-                        <p class="card-text">Ofrecemos soporte técnico para resolver cualquier inconveniente que puedas enfrentar con tus equipos electrónicos.</p>
-                        <a href="#" class="btn btn-primary">Más Información</a>
+                        <h3 class="card-title">Las Últimas Tendencias en Tecnología</h3>
+                        <p class="card-text">Descubre las tendencias más recientes en el mundo de la tecnología y cómo pueden beneficiarte...</p>
+                        <span class="more-content" style="display: none;">
+                            <p>Las últimas tendencias en tecnología incluyen la inteligencia artificial, que está transformando diversas industrias con aplicaciones en automatización y análisis de datos. El 5G está revolucionando la conectividad, permitiendo velocidades de internet más rápidas y la expansión del Internet de las Cosas (IoT). La computación cuántica está avanzando, prometiendo resolver problemas complejos a una velocidad sin precedentes. Además, la sostenibilidad está ganando relevancia, impulsando el desarrollo de tecnologías ecológicas. Por último, la realidad aumentada y virtual están mejorando experiencias en entretenimiento y educación.</p>
+                        </span>
+                        <a href="javascript:void(0)" class="btn btn-primary" onclick="toggleContent(this)">Leer más</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
+    
+    <script>
+        function toggleContent(element) {
+            const moreContent = element.previousElementSibling;
+            moreContent.style.display = moreContent.style.display === 'none' ? 'block' : 'none';
+            element.textContent = element.textContent === 'Leer más' ? 'Leer menos' : 'Leer más';
+        }
+    </script>
     
     
-    
+
     <footer class="text-center bg-light py-3 mt-auto">
         <p class="mb-0">&copy; 2024 M.A.D. Todos los derechos reservados.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script>
+        function toggleContent(button) {
+            const moreContent = button.previousElementSibling;
+            if (moreContent.style.display === "none" || moreContent.style.display === "") {
+                moreContent.style.display = "inline";
+                button.textContent = "Leer menos";
+            } else {
+                moreContent.style.display = "none";
+                button.textContent = "Leer más";
+            }
+        }
+    </script>
 </body>
 </html>
